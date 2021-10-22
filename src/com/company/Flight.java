@@ -2,19 +2,27 @@ package com.company;
 import java.util.Scanner;
 
 public class Flight {
- String airline;
- int flightNo;
- int seats;
- int capacity;
- Scanner input = new Scanner(System.in);
- Ticket ticket = new Ticket();
+ private String airline;
+ private int flightNo = 7;
+ private int seats;
+ private int capacity;
 
- public  void bookMytrip()
- {
-  System.out.println("Enter the departure");
-  ticket.departure = input.nextLine();
-  System.out.println("Enter the destination");
-  ticket.destination = input.nextLine();
+ // 
+public String getAirline() {
+ return this.airline;
+}
 
+public int getFlightNo() {
+  return this.flightNo;
  }
+
+ public int getSeats() {
+  return this.seats;
+ }
+
+ public int getCapacity() {
+  return this.capacity;
+ }
+
+
 }
