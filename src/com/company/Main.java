@@ -2,13 +2,23 @@ package com.company;
 
 public class Main {
 
+
     public static void main(String[] args) {
 
-        Flight flight = new Flight();
-        flight.bookMytrip();
 
-        System.out.println("here are the flights available for your trip:");
+        RegularTicket regularTicket = new RegularTicket("lunch", 2500, "Mumbai", "Banglore", "9:00 AM", "22 OCT 2021", "10:30 AM", "22 OCT 2021", 10, 5678);
+        TouristTicket touristTicket = new TouristTicket("VIVANTA HOTEL Banglore", 3500, "Mumbai", "Banglore", "9:00 AM", "22 OCT 2021", "10:30 AM", "22 OCT 2021", 10, 2456);
 
-        // write your code here
+        printTicketDetails(regularTicket);
+        printTicketDetails(touristTicket);
+
+    }
+
+    public static void printTicketDetails(Ticket ticket) {
+        int a = ticket.getPNRNo();
+
+        System.out.println(a);
+
     }
 }
+

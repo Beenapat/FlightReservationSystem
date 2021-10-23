@@ -2,25 +2,25 @@ package com.company;
 import java.util.Scanner;
 
 public class Flight {
- private String airline;
- private int flightNo = 7;
- private int seats;
- private int capacity;
 
- // 
-public String getAirline() {
+  private String airline;
+  private int flightNo ;
+  private int seats;
+  private int capacity;
+
+  public String getAirline() {
  return this.airline;
 }
 
-public int getFlightNo() {
+  public int getFlightNo() {
   return this.flightNo;
  }
 
- public int getSeats() {
+  public int getSeats() {
   return this.seats;
  }
 
- public int getCapacity() {
+  public int getCapacity() {
   return this.capacity;
  }
 
